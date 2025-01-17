@@ -20,7 +20,7 @@ def fetch_block(block_number):
 
     try:
         # Send the POST request to the RPC URL
-        response = requests.post(config.RPC_URL, json=payload)
+        response = requests.post(config.rpc_url, json=payload)
         response.raise_for_status()
 
         # Parse the JSON response
@@ -39,7 +39,7 @@ def fetch_block(block_number):
 
 # Example usage
 if __name__ == "__main__":
-    block_number = 100  # Replace with the desired block number
+    block_number = 36229975
     block = fetch_block(block_number)
 
     if block:
