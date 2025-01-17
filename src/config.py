@@ -10,6 +10,7 @@ load_dotenv()
 class Config:
     rpc_url: str
 
+
 def load_env_var(var_name: str) -> str:
     """Loads and validates environment variables."""
     return os.getenv(var_name, default="")

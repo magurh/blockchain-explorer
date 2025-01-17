@@ -6,6 +6,6 @@ def save_block(block_data, filename):
     :param block_data: The block data dictionary.
     :param filename: The filename to save the JSON data.
     """
-    with open(filename, 'w') as json_file:
-        son.dump(block_data, json_file, indent=4)
+    with open(filename, "w") as json_file:
+        json.dump(block_data, json_file, indent=4)
         print(f"Block data saved to {filename}")
