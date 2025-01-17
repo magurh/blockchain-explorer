@@ -1,0 +1,16 @@
+[project]
+name = "blockchain-explorer"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "dataclasses>=0.8",
+    "eth-hash>=0.7.1",
+    "jupyter>=1.1.1",
+    "lab>=8.3",
+    "pathlib>=1.0.1",
+    "python-dotenv>=1.0.1",
+    "requests>=2.32.3",
+    "rlp>=4.0.1",
+]
